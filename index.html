@@ -183,6 +183,16 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .chip.hot{background:var(--acc);color:var(--acc-ink);border-color:var(--acc);font-weight:600}
 @media(max-width:680px){.skillrow{grid-template-columns:1fr;gap:14px}}
 
+/* certificates */
+.cert-grid{margin-top:50px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cert{display:flex;align-items:center;gap:13px;border:1px solid var(--line);border-radius:var(--r-card);
+  background:var(--surface);padding:18px 20px;transition:border-color .25s,transform .25s}
+.cert:hover{border-color:var(--acc);transform:translateY(-2px)}
+.cert i{color:var(--acc);font-size:22px;flex-shrink:0}
+.cert span{font-size:14.5px;color:var(--ink-dim);line-height:1.35}
+@media(max-width:820px){.cert-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.cert-grid{grid-template-columns:1fr}}
+
 /* contact */
 .contact{text-align:left;padding:120px 0}
 .contact .wrap{position:relative;z-index:1}
@@ -219,6 +229,7 @@ footer a:hover{color:var(--ink)}
       <a href="#leistungen">Leistungen</a>
       <a href="#projekte">Projekte</a>
       <a href="#werdegang">Werdegang</a>
+      <a href="#zertifikate">Zertifikate</a>
       <a href="#kontakt">Kontakt</a>
       <a href="#kontakt" class="nav-cta">Projekt besprechen</a>
     </div>
@@ -368,6 +379,30 @@ footer a:hover{color:var(--ink)}
       <div class="skillrow reveal"><div class="lbl">Programmierung</div><div class="chips"><span class="chip">JavaScript / Node</span><span class="chip">Python</span><span class="chip">AutoHotkey</span><span class="chip">HTML / CSS</span><span class="chip">SQL / Datenbanken</span></div></div>
       <div class="skillrow reveal"><div class="lbl">E-Commerce &amp; Marketing</div><div class="chips"><span class="chip">Shopify</span><span class="chip">WooCommerce</span><span class="chip">Amazon / eBay</span><span class="chip">Google Ads</span><span class="chip">SEO</span><span class="chip">GA4</span></div></div>
       <div class="skillrow reveal"><div class="lbl">Metall · Maschinen · 3D</div><div class="chips"><span class="chip">Laseranlagen</span><span class="chip">Kantbänke</span><span class="chip">Schweißroboter</span><span class="chip">CAD &amp; 3D-Druck</span><span class="chip">Konstruktionsmechanik</span></div></div>
+      <div class="skillrow reveal"><div class="lbl">Sprachen</div><div class="chips"><span class="chip">Deutsch</span><span class="chip">Russisch</span><span class="chip">Englisch</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="zertifikate" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-eyebrow">Zertifikate</div>
+      <h2 class="display">Aktuell zertifiziert in Marketing &amp; Digital.</h2>
+      <p class="sec-sub">Weiterbildungen 2024–2025. Geprüftes Wissen, direkt angewendet bei JJ's und im eigenen Gewerbe.</p>
+    </div>
+    <div class="cert-grid">
+      <div class="cert reveal"><i class="ph ph-seal-check"></i><span>Certified AI-Powered Marketer</span></div>
+      <div class="cert reveal"><i class="ph ph-seal-check"></i><span>Google Ads &ndash; Leistungsanalyse</span></div>
+      <div class="cert reveal"><i class="ph ph-seal-check"></i><span>Google Analytics (GA4)</span></div>
+      <div class="cert reveal"><i class="ph ph-seal-check"></i><span>Google UX Design &ndash; Identify Good UX</span></div>
+      <div class="cert reveal"><i class="ph ph-seal-check"></i><span>Google Atelier Digital</span></div>
+      <div class="cert reveal"><i class="ph ph-seal-check"></i><span>Semrush &ndash; SEO Essentials</span></div>
+      <div class="cert reveal"><i class="ph ph-seal-check"></i><span>Semrush &ndash; On-Page SEO Essentials</span></div>
+      <div class="cert reveal"><i class="ph ph-seal-check"></i><span>Semrush &ndash; Local SEO Essentials</span></div>
+      <div class="cert reveal"><i class="ph ph-seal-check"></i><span>Semrush &ndash; Keyword Research Essentials</span></div>
+      <div class="cert reveal"><i class="ph ph-seal-check"></i><span>Semrush &ndash; Getting Started</span></div>
+      <div class="cert reveal"><i class="ph ph-seal-check"></i><span>Shopify &ndash; Content Marketing &amp; Sales</span></div>
     </div>
   </div>
 </section>
